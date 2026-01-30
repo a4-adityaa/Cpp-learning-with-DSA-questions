@@ -13,7 +13,7 @@ int binTodec(int binNum){
     }
     return ans;
 }
-
+// printing
 int main() {
     int binNum;
     cout<<"enter the binary number: ";
