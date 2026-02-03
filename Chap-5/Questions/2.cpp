@@ -1,5 +1,5 @@
 // to find x^n using binary exponential;
-
+// 3, 2 => 3 ^ 4 = 9
 #include<iostream>
 using namespace std;
 
@@ -25,6 +25,6 @@ int binaryexp(int x, int n){
 int main(){
     int n, x;
     cout<<"Enter the number and power: ";
-    cin>>x >>n;
+    cin >> x >> n;
     cout<< "the x^n is: " <<binaryexp(x,n);
 }
