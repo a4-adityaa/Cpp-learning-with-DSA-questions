@@ -1,5 +1,5 @@
 // to find x^n using binary exponential;
-// 3, 2 => 3 ^ 4 = 9
+// 3, 2 => 3 ^ 2 = 9
 #include<iostream>
 using namespace std;
 
