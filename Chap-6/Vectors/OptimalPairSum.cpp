@@ -12,21 +12,21 @@ vector<int> pairSum(vector<int> nums, int target) {
         int sum = nums[left] + nums[right];
         
         if(sum == target) {
-            return {left, right};  // Found pair
+            return {left, right};  
         }
         else if(sum < target) {
-            left++;   // Need larger sum
+            left++;   
         }
         else {
-            right--;  // Need smaller sum
+            right--; 
         }
     }
     
-    return {};  // No pair found
+    return {};  
 }
 
 int main() {
-    vector<int> nums = {2, 7, 11, 15};  // Sorted array
+    vector<int> nums = {2, 7, 11, 15}; 
     int target = 9;
     
     vector<int> result = pairSum(nums, target);
