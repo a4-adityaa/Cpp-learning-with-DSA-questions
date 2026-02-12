@@ -4,7 +4,6 @@ using namespace std;
 int binarySearch(int arr[], int size, int target) {
     int start = 0;
     int end = size - 1;
-
     while (start <= end) {
         int mid = start + (end - start) / 2; // To avoid overflow
 
