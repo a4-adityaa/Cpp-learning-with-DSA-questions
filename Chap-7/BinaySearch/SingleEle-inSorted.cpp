@@ -33,7 +33,7 @@ int singleNonDuplicate(vector<int>& nums) {
                 }
             }
         }
-        return -1;
+    return -1;
 };
 
 int main(){
