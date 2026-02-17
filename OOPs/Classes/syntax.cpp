@@ -22,6 +22,15 @@ class Teacher{
     return salary;
   }
 };
+ class Bank{
+  private:  // Data hiding
+  double balance;
+  string password;
+
+  public:
+  string AccountType;
+  string username;
+ };
 
 int main(){
     Teacher t1;
