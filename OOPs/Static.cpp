@@ -1,0 +1,19 @@
+// static keyword is used to fix some value throught whole program;
+
+#include<iostream>
+using namespace std;
+
+void fun(){
+     static int x=0;
+    
+     cout<< x << endl;
+     x++;
+}
+
+int main (){
+  fun();
+  fun();
+  fun();
+
+  return 0;
+}
