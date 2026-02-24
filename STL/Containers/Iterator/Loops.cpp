@@ -1,5 +1,5 @@
 // implement loops using Iterator;
-// auto keyword is used to deduce the type of variable;
+// auto keyword is used to auto deduce the type of variable;
 
 #include<iostream>
 #include<vector>

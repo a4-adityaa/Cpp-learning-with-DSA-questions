@@ -1,4 +1,4 @@
-// compile time polymorpjism using function overloading;
+// compile time polymorphism using function overloading;
 
 #include<iostream>
 #include<string>

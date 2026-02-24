@@ -4,7 +4,7 @@
 using namespace std;
 
 void fun(){
-     static int x=0;
+    static int x=0;
     
      cout<< x << endl;
      x++;
