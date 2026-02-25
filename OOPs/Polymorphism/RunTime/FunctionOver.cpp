@@ -11,7 +11,7 @@ class Parent{
     }
 };
 
-class Child{
+class Child : public Parent{
     public:
     void display(){
         cout<<"This is child class"<<endl;
@@ -19,11 +19,11 @@ class Child{
 };
 
 int main(){
-    // Child c1;
-    Parent p1;
+    Child c1;
+    //Parent p1;
     
-    // c1.display();
-    p1.display();
+    c1.display();
+    //p1.display();
 
     return 0;
 }
