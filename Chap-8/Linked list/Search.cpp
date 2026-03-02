@@ -53,3 +53,13 @@ class List{
         }
     
 };
+int main(){
+    List l1;
+    l1.Push_back(10);
+    l1.Push_back(20);
+    l1.Push_back(30);
+    l1.Push_back(40);
+    l1.PrintLL();
+    cout<<"\n"<<l1.Search(20);
+    return 0;
+}
