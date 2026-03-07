@@ -15,5 +15,6 @@ int main(){
     cout<<"Enter the value of n: ";
     cin>>n;
     printNum(n);
+    
     return 0;
 }
