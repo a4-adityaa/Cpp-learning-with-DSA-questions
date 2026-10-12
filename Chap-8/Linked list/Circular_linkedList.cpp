@@ -36,6 +36,18 @@ class CircularList{
         }
     }
 
+    void insertAtTail(int val){
+        Node* newNode = new Node(val);
+        
+        if(tail == NULL){
+            head = tail = newNode;
+            tail-> next = newNode;
+        } else{
+            tail-> next = newNode;
+            tail = newNode;
+            tail->next = head;
+        }
+    }
 
     void printList(){
         if(head == NULL) return;
@@ -56,6 +68,8 @@ int main(){
     cll.insertAtHead(1);
     cll.insertAtHead(2);
     cll.insertAtHead(3);
+    cll.insertAtTail(4);
+    cll.insertAtTail(5);
 
     cll.printList();
 
