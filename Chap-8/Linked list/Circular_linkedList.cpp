@@ -41,7 +41,7 @@ class CircularList{
         
         if(tail == NULL){
             head = tail = newNode;
-            tail-> next = newNode;
+            tail-> next = head;
         } else{
             tail-> next = newNode;
             tail = newNode;
@@ -60,6 +60,42 @@ class CircularList{
             temp = temp->next;
         }
     }
+    
+    void deleteFromHead(){
+        if(head == NULL){
+            cout << "linked list id empty";
+            return;
+        } else if(head == tail){
+            delete head;
+            head = tail = NULL;
+        }else{
+            Node* temp = head;
+            head = head-> next;
+            tail-> next = head;
+
+            temp-> next = NULL;
+            delete temp;
+        }
+    }
+
+    void deleteFromTail(){
+        if(head == NULL){
+            cout << "Linked list is empty";
+            return;
+        }else if(head== tail){
+            delete head;
+        } else{
+            Node* temp = tail;
+            Node* prev = head;
+            while(prev-> next != tail){
+                prev = prev-> next;
+            }
+            tail= prev;
+            tail->next= head;
+            temp-> next = NULL;
+            delete temp;
+        }
+    }
 };
 
 int main(){
@@ -71,6 +107,8 @@ int main(){
     cll.insertAtTail(4);
     cll.insertAtTail(5);
 
+    cll.deleteFromHead();
+    cll.deleteFromTail();
     cll.printList();
 
     return 0;
