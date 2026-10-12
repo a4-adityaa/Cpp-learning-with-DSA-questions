@@ -84,6 +84,7 @@ class CircularList{
             return;
         }else if(head== tail){
             delete head;
+            head= tail= NULL;
         } else{
             Node* temp = tail;
             Node* prev = head;
